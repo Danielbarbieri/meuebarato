@@ -42,7 +42,7 @@
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
         <link rel="stylesheet" href="/css/estilos.css">
-        <title>Loja Óculos</title>
+        <title>Loja Óculos :: Cadastrar nova senha</title>
     </head>
     <body>
         <div class="d-flex flex-column wrapper">
@@ -93,10 +93,29 @@
                     </div>
                 </div>
             </div>
-        </nav>
+            </nav>
         <main class="flex-fill">
             <div class="container">
+                <div class="row justify-content-center">
+                    <form class="col-sm-10 col-md-8 col-lg-6">
+                        <h1>Identifique-se, por favor</h1>
+                        
+                        <div class="form-floating mb-3">
+                            <input type="password" name="" id="txtsenha" class="form-control">
+                            <label for="txtSenha">Nova Senha</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="password" name="" id="txtsenha" class="form-control">
+                            <label for="txtSenha">Confirmar Nova Senha</label>
+                        </div>
+                      
 
+                        <button type="button" onclick="window.location.href='/confirmcadastrosenha.html'" class="btn btn-danger btn-lg">
+                            Cadastrar
+                        </button>
+                        
+                    </form>
+                </div>
             </div>
         </main>
         <footer class="border-top text-muted bg-light">

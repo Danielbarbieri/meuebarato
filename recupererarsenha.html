@@ -48,8 +48,9 @@
         <div class="d-flex flex-column wrapper">
             <nav class="navbar navbar-expand-lg navbar-dark bg-danger border-bottom shadow-sm mb-3">
                 <div class="container">
-                    <a class="navbar-brand" href="#">
-                        <b> Meu & Barato</b>
+                    <a class="navbar-brand col-1" href="#">
+                        <!-- <b> Meu & Barato</b> -->
+                        <img src="/img/0001.jpg" class="img-thumbnail float-start img-fluid" alt="...">
                     </a>
                     <button
                         class="navbar-toggler"
@@ -95,17 +96,21 @@
         </nav>
         <main class="flex-fill">
             <div class="container">
-                <form action="">
-                    <h1>Recuperar Senha</h1>
-                    <label for="txtEmail">E-mail</label>
-                    <input type="email" name="" id="txtEmail">
-                    <button type="button" onclick="window.location.href='/confirmrecupsenha.html'">
-                        Recuperar Senha
-                    </button>
-                    <p>
-                        Ainda não é cadastrado? <a href="/cadastro.html">Clique aqui para se cadastrar</a>
-                    </p>
-                </form>
+                <div class="row justify-content-center">
+                    <form class="col-sm-10 col-md-8 col-lg-6">
+                        <h1>Recuperar Senha</h1>
+                        <div class="form-floating mb-3">
+                            <input type="email" name="" id="txtEmail" class="form-control">
+                            <label for="txtEmail">E-mail</label>
+                        </div>
+                        <button type="button" onclick="window.location.href='/confirmrecupsenha.html'" class="btn btn-danger btn-lg">
+                            Recuperar Senha
+                        </button>
+                        <p class="mt-3">
+                            Ainda não é cadastrado? <a href="/cadastro.html">Clique aqui para se cadastrar</a>
+                        </p>
+                    </form>
+                </div>
             </div>
         </main>
         <footer class="border-top text-muted bg-light">
