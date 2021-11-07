@@ -44,7 +44,7 @@
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
         <link rel="stylesheet" href="/css/estilos.css">
-        <title>Loja Óculos :: </title>
+        <title>Loja Óculos :: Área do Cliente :: Alteração de Senha</title>
     </head>
     <body>
         <div class="d-flex flex-column wrapper">
@@ -78,10 +78,10 @@
                     <div class="align-self-end">
                         <ul class="navbar-nav">
                             <li class="nav-item">
-                                <a class="nav-link text-white" href="/cadastro.html">Quero me Cadastrar</a>
+                                <a class="nav-link text-white" href="/cadastro.html">Sair</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-white" href="/login.html">Contato</a>
+                                <a class="nav-link text-white" href="/login.html">Logado como <b>Daniel Barbieri</b></a>
                             </li>
                             <li class="nav-item">
                                 <span class="badge rounded-pill bg-dark text-light position-absolute ms-4 mt-0" title="5 produto(s) no carrinho">
@@ -98,7 +98,69 @@
             </nav>
         <main class="flex-fill">
             <div class="container">
-                
+                <h1>
+                    Minha Conta
+                </h1>
+                <div class="row gx-3">
+                    <div class="col-4">
+                        <div class="list-group">
+                            <a href="/cliente_dados.html" class="list-group-item list-group-item-action">
+                                <i class="bi-person fs-6 pe-1"></i>Dados Pessoais
+                            </a>
+                        </div>
+                        <div class="list-group">
+                            <a href="/cliente_contatos.html" class="list-group-item list-group-item-action">
+                                <i class="bi-mailbox fs-6 pe-1"></i>Contatos
+                            </a>
+                        </div>
+                        <div class="list-group">
+                            <a href="/cliente_endereco.html" class="list-group-item list-group-item-action">
+                                <i class="bi-house-door fs-6 pe-1"></i>Endereço
+                            </a>
+                        </div>
+                        <div class="list-group">
+                            <a href="/cliente_pedidos.html" class="list-group-item list-group-item-action">
+                                <i class="bi-truck fs-6 pe-1"></i>Pedidos
+                            </a>
+                        </div>
+                        <div class="list-group">
+                            <a href="/cliente_favoritos.html" class="list-group-item list-group-item-action">
+                                <i class="bi-heart fs-6 pe-1"></i>Favoritos
+                            </a>
+                        </div>
+                        <div class="list-group">
+                            <a href="/cliente_senha.html" class="list-group-item list-group-item-action  bg-danger text-light">
+                                <i class="bi-lock fs-6 pe-1"></i>Alterar Senha
+                            </a>
+                        </div>
+                        <div class="list-group">
+                            <a href="/index.html" class="list-group-item list-group-item-action">
+                                <i class="bi-door-open fs-6 pe-1"></i>Sair
+                            </a>
+                        </div>                        
+                    </div>
+                    <div class="col-8">
+                        <form class="col-sm-12 col-md-8 col-lg-6">
+                            <div class="form-floating mb-3">
+                                <input type="password" id="txtSenhaAtual" class="form-control" placeholder=" " autofocus>
+                                <label for="txtSenhaAtual">Digite aqui sua senha atual</label>
+                            </div>
+
+                            <div class="form-floating mb-3">
+                                <input type="password" id="txtSenha" class="form-control" placeholder=" ">
+                                <label for="txtSenha">Digite aqui sua nova senha</label>
+                            </div>
+    
+                            <div class="form-floating mb-3">
+                                <input type="password" id="txtConfSenha" class="form-control" placeholder=" ">
+                                <label for="txtConfSenha">Redigite aqui a nova senha</label>
+                            </div>
+    
+                            <button type="button" onclick="window.location.href='/confirmcadastrosenha.html'"
+                                class="btn btn-lg btn-danger">Alterar Senha</button>
+                        </form>
+                    </div>
+                </div>
             </div>
         </main>
         <footer class="border-top text-muted bg-light">
